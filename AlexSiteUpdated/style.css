@@ -1,0 +1,87 @@
+
+@font-face{
+  font-family: HeroFont;
+  src: url("HeroFont.ttf");
+}
+@font-face {
+  font-family: hyper;
+  src: url("Monospace.ttf");
+}
+.alt{
+  text-align: center;
+  font-family: monospace;
+}
+.centerpiece{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 5%;
+}
+
+.gamegrid{
+  margin: 5% 30%;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.gamegrid > div{
+  display: block;
+  margin:auto;
+}
+.imgSize{
+  max-width: 300px;
+  max-height: 300px;
+}
+.gamegrid > div > p {
+  text-align: center;
+}
+.openTitle{
+  display: inline-block;
+  margin-right: 50%;
+  margin-left: 5%;
+  
+  font-family: HeroFont;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 15px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #0f0f0f;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: HeroFont;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #a1a1a1;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
